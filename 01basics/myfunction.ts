@@ -36,6 +36,6 @@ function consoleError(errmsg:string):void{
     console.error(errmsg)
 }
 
-
+let userId = 12312
 
 export{}
