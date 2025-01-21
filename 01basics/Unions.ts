@@ -30,9 +30,24 @@ function getDbid(id:number | string):string{
         id.toLowerCase();
     }
     return "id"
-
 }
 
 getDbid(1)
 getDbid("1")
+
+// arrays as well
+
+const data :number[]= [1,2,3,4,5,6,7,8,9,10]
+const data2 :string[] = ["1","2","3","4","5","6","7","8","9","10"]
+
+const data3 : (string | number)[] = [1,2,3,4,5,6,7,8,9,10,"1","2","3","4","5","6","7","8","9","10"]
+
+// not string[] | number[] cuz it will only accept string or number, not both
+// so we use (string | number)[]
+
+let seatAllotment : "window" | "aisle" | "middle" 
+seatAllotment = "window"
+seatAllotment = "aisle" 
+seatAllotment = "middle"
+
 export {}
