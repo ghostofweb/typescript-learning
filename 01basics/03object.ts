@@ -1,4 +1,4 @@
-const User = {
+type User1 = {
   name:"hello",
   email:"hello@gmail.com",
   isActive : true

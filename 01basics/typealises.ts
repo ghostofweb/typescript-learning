@@ -9,3 +9,5 @@ function createUser(user:User):User{
 }
 
 createUser({name:"hello",email:"",isActive:true}) // this is correct
+
+export {}
