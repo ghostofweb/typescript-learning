@@ -19,7 +19,14 @@ let rbg:[number,number,number] = [255,0,0];
 // user2 = ['name', 20]; // error
 // user2 = [20, 'name', true]; // error
 
+type User = [number,string]
+const newUser:User = [1, 'name'];
+// here we are defining a type User which is a tuple with 2 elements
+// the first element is of type number
+// the second element is of type string
 
+newUser[1] = "new name";
+// here we are changing the value of the second element in the tuple to "new name"
 
 
 export {}
