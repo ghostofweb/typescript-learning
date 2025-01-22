@@ -12,7 +12,7 @@ interface User {
 
 
 // Adding more properties to the User interface
-interface User {
+interface User01 {
     githubToken: string;
 } 
 // This is also known as reopening the interface.
@@ -28,7 +28,7 @@ const hello1: User = {
     firstName: '',
     githubToken: '',
     name: 'John Doe', // Add name
-    city: 'New York', // Add city
+
     startTrial: () => {
         return "Trial Started";
     },
@@ -45,7 +45,7 @@ const hello2: Admin = {
     firstName: '',
     githubToken: '',
     name: 'Jane Doe', // Add name
-    city: 'San Francisco', // Add city
+
     startTrial: () => {
         return "Trial Started";
     },
