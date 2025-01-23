@@ -29,7 +29,13 @@ class User5{
         }
         this._courseCount = count;
     }
-
+    // getteres and setters are designed in js to access and modify the private properties of a class
 }
+const sahil = new User5("sahiljeet@gmail.com", "Sahil") 
 
-// getteres and setters are designed in js to access and modify the private properties of a class
+class SubUser extends User5 { // cant access private properties of User5
+    isFamily : boolean = true
+    changeCourseCount(){
+        this.courseCount = 2
+    }
+}
