@@ -1,6 +1,6 @@
 class User5{
 
-    private _courseCount:number = 1
+    protected _courseCount:number = 1
 
     readonly city:string = "Jaipur"
     constructor(
@@ -33,9 +33,10 @@ class User5{
 }
 const sahil = new User5("sahiljeet@gmail.com", "Sahil") 
 
-class SubUser extends User5 { // cant access private properties of User5
-    isFamily : boolean = true
+
+class SubUser extends User5 {   //Inheritance
+    isFamily : boolean =true
     changeCourseCount(){
-        this.courseCount = 2
+        this._courseCount = 2
     }
 }
