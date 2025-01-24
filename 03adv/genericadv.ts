@@ -18,7 +18,6 @@ genericFunction(3,{
     password:'admin'
 });
 
-
 interface Quiz{
     name:string;
     type:string;
