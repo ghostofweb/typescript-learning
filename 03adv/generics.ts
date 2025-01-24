@@ -35,5 +35,15 @@ const getMoreSearchProducts = <T> (products:T[]) : T => {
 
 
 function anotherFunction<T,U>(val:T, val2:U):object{
-    return {};
+    return {} ;
+}
+
+anotherFunction(3,'4')
+
+//extended generics
+
+interface Database{
+   connection:string; 
+   username:string;
+   password:string;
 }
